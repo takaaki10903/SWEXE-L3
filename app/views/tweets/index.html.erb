@@ -3,6 +3,7 @@
 <% end %>
 <div id="pageB">
 <div id="pagec">
+
 <% @tweets.each do |a| %>
     <p>
         
@@ -14,6 +15,7 @@
         <%= link_to '削除', "/tweets/#{a.id}", method: :delete %>
         <%= link_to '表示', "/tweets/#{a.id}" %>
         <%= link_to '編集', "/tweets/#{a.id}/edit" %>
+        <%= image_tag'c.png'%>
     </p>
 <% end %>
 
