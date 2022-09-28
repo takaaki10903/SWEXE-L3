@@ -1,8 +1,11 @@
 <% if flash[:notice] %>
 <%= flash[:notice] %>
 <% end %>
+<div id="pageB">
+<div id="pagec">
 <% @tweets.each do |a| %>
     <p>
+        
         [メッセージ]
         <%= a.message %>
         [日時]
@@ -13,6 +16,8 @@
         <%= link_to '編集', "/tweets/#{a.id}/edit" %>
     </p>
 <% end %>
-<%= link_to '新規追加', '/tweets/new' %>
+
+</div>
+</div>
 
 
